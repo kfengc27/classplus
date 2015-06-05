@@ -37,15 +37,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-S9-m8J">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-S9-m8J">
                                                     <rect key="frame" x="100" y="5" width="40" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQf-gq-GfS">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQf-gq-GfS">
                                                     <rect key="frame" x="100" y="44" width="38" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -124,7 +124,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="907" y="0.0"/>
+            <point key="canvasLocation" x="920" y="1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ucN-v2-azS">
@@ -138,6 +138,7 @@
                         <color key="tintColor" red="0.64313725490196083" green="0.20000000000000001" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                             <color key="textColor" red="0.64313725490196083" green="0.20000000000000001" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -163,22 +164,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-SN-GSQ">
-                                <rect key="frame" x="9" y="69" width="301" height="167"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-SN-GSQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="wkk-7f-pdz"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="课程名称" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="301" translatesAutoresizingMaskIntoConstraints="NO" id="gj1-fx-PGl">
-                                <rect key="frame" x="9" y="110" width="301" height="34"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
-                                <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="教师姓名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR9-pR-Tho">
-                                <rect key="frame" x="27" y="165" width="267" height="21"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
-                                <color key="textColor" red="0.55952196779999996" green="0.55952196779999996" blue="0.55952196779999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2r-Ok-WGn">
                                 <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -188,16 +179,53 @@
                                     <tabBarItem title="赞" image="search_L 2@1x" id="5gm-2P-Erg"/>
                                 </items>
                             </tabBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-1E-SyQ">
-                                <rect key="frame" x="9" y="241" width="301" height="278"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-1E-SyQ">
+                                <rect key="frame" x="3" y="306" width="301" height="278"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outlet property="delegate" destination="Cg7-cS-uA5" id="9ol-wg-yox"/>
                                 </connections>
                             </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR9-pR-Tho">
+                                <rect key="frame" x="10" y="222" width="108" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="aYj-eh-26I"/>
+                                    <constraint firstAttribute="height" constant="27" id="gxS-RQ-Kua"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="教师姓名">
+                                        <attributes>
+                                            <color key="NSColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="课程名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" enabled="NO" preferredMaxLayoutWidth="301" translatesAutoresizingMaskIntoConstraints="NO" id="gj1-fx-PGl">
+                                <rect key="frame" x="10" y="174" width="294" height="40"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NR9-pR-Tho" firstAttribute="top" secondItem="gj1-fx-PGl" secondAttribute="bottom" constant="8" symbolic="YES" id="0gF-Jj-Eo3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XdD-1E-SyQ" secondAttribute="bottom" constant="-16" id="7sA-uw-cYg"/>
+                            <constraint firstAttribute="trailing" secondItem="Ltd-SN-GSQ" secondAttribute="trailing" id="CXj-vK-oDE"/>
+                            <constraint firstItem="Ltd-SN-GSQ" firstAttribute="top" secondItem="8SL-tj-Wxb" secondAttribute="bottom" id="OcU-0h-92B"/>
+                            <constraint firstItem="XdD-1E-SyQ" firstAttribute="top" secondItem="NR9-pR-Tho" secondAttribute="bottom" constant="57" id="Sva-IM-GuS"/>
+                            <constraint firstItem="NR9-pR-Tho" firstAttribute="top" secondItem="Ltd-SN-GSQ" secondAttribute="bottom" constant="-52" id="W9B-rh-zrb"/>
+                            <constraint firstItem="XdD-1E-SyQ" firstAttribute="trailing" secondItem="Cg7-cS-uA5" secondAttribute="trailingMargin" id="ayT-uV-IAp"/>
+                            <constraint firstItem="NR9-pR-Tho" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leadingMargin" constant="-6" id="biN-Ee-QJE"/>
+                            <constraint firstItem="NR9-pR-Tho" firstAttribute="leading" secondItem="gj1-fx-PGl" secondAttribute="leading" id="oc9-bB-Wv2"/>
+                            <constraint firstItem="XdD-1E-SyQ" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leadingMargin" constant="-13" id="zN0-gN-dHG"/>
+                            <constraint firstItem="Ltd-SN-GSQ" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leading" id="zw6-gK-mBC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="课程介绍" id="ESW-K2-hgd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -211,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crP-8W-C5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="1"/>
+            <point key="canvasLocation" x="1409" y="-109"/>
         </scene>
     </scenes>
     <resources>
