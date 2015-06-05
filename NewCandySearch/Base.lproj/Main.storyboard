@@ -165,13 +165,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-SN-GSQ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="210"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-SN-GSQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="wkk-7f-pdz"/>
+                                    <constraint firstAttribute="height" constant="180" id="wkk-7f-pdz"/>
                                 </constraints>
                             </imageView>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2r-Ok-WGn">
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2r-Ok-WGn">
                                 <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
@@ -180,20 +180,8 @@
                                     <tabBarItem title="赞" image="search_L 2@1x" id="5gm-2P-Erg"/>
                                 </items>
                             </tabBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-1E-SyQ">
-                                <rect key="frame" x="3" y="306" width="301" height="278"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Cg7-cS-uA5" id="9ol-wg-yox"/>
-                                </connections>
-                            </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR9-pR-Tho">
-                                <rect key="frame" x="10" y="222" width="108" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="108" id="aYj-eh-26I"/>
-                                    <constraint firstAttribute="height" constant="27" id="gxS-RQ-Kua"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR9-pR-Tho">
+                                <rect key="frame" x="10" y="211" width="72" height="18"/>
                                 <attributedString key="attributedText">
                                     <fragment content="教师姓名">
                                         <attributes>
@@ -205,27 +193,33 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="课程名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" enabled="NO" preferredMaxLayoutWidth="301" translatesAutoresizingMaskIntoConstraints="NO" id="gj1-fx-PGl">
-                                <rect key="frame" x="10" y="174" width="294" height="40"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="课程名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" enabled="NO" preferredMaxLayoutWidth="301" translatesAutoresizingMaskIntoConstraints="NO" id="gj1-fx-PGl">
+                                <rect key="frame" x="10" y="154" width="294" height="40"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-1E-SyQ">
+                                <rect key="frame" x="50" y="267" width="301" height="172"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Cg7-cS-uA5" id="9ol-wg-yox"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NR9-pR-Tho" firstAttribute="top" secondItem="gj1-fx-PGl" secondAttribute="bottom" constant="8" symbolic="YES" id="0gF-Jj-Eo3"/>
                             <constraint firstAttribute="bottomMargin" secondItem="XdD-1E-SyQ" secondAttribute="bottom" constant="-16" id="7sA-uw-cYg"/>
-                            <constraint firstAttribute="trailing" secondItem="Ltd-SN-GSQ" secondAttribute="trailing" id="CXj-vK-oDE"/>
+                            <constraint firstAttribute="trailing" secondItem="W2r-Ok-WGn" secondAttribute="trailing" id="HT0-TB-Mdi"/>
+                            <constraint firstAttribute="trailing" secondItem="Ltd-SN-GSQ" secondAttribute="trailing" id="HXu-c8-ui8"/>
                             <constraint firstItem="Ltd-SN-GSQ" firstAttribute="top" secondItem="8SL-tj-Wxb" secondAttribute="bottom" id="OcU-0h-92B"/>
-                            <constraint firstItem="XdD-1E-SyQ" firstAttribute="top" secondItem="NR9-pR-Tho" secondAttribute="bottom" constant="57" id="Sva-IM-GuS"/>
-                            <constraint firstItem="NR9-pR-Tho" firstAttribute="top" secondItem="Ltd-SN-GSQ" secondAttribute="bottom" constant="-52" id="W9B-rh-zrb"/>
+                            <constraint firstAttribute="bottom" secondItem="W2r-Ok-WGn" secondAttribute="bottom" id="aI5-PD-mHV"/>
                             <constraint firstItem="XdD-1E-SyQ" firstAttribute="trailing" secondItem="Cg7-cS-uA5" secondAttribute="trailingMargin" id="ayT-uV-IAp"/>
-                            <constraint firstItem="NR9-pR-Tho" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leadingMargin" constant="-6" id="biN-Ee-QJE"/>
-                            <constraint firstItem="NR9-pR-Tho" firstAttribute="leading" secondItem="gj1-fx-PGl" secondAttribute="leading" id="oc9-bB-Wv2"/>
+                            <constraint firstItem="Ltd-SN-GSQ" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leading" id="gbK-Ki-hEd"/>
+                            <constraint firstItem="W2r-Ok-WGn" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leading" id="jir-Nv-1Hg"/>
                             <constraint firstItem="XdD-1E-SyQ" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leadingMargin" constant="-13" id="zN0-gN-dHG"/>
-                            <constraint firstItem="Ltd-SN-GSQ" firstAttribute="leading" secondItem="Cg7-cS-uA5" secondAttribute="leading" id="zw6-gK-mBC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="课程介绍" id="ESW-K2-hgd"/>
