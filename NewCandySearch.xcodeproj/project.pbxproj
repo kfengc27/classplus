@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4207FE1F1B1364CD003FA726 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4207FE1E1B1364CD003FA726 /* Images.xcassets */; };
 		422ABB521B106E1B00D37276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422ABB511B106E1A00D37276 /* Foundation.framework */; };
 		422ABB541B106E1B00D37276 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422ABB531B106E1B00D37276 /* CoreGraphics.framework */; };
 		422ABB561B106E1B00D37276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422ABB551B106E1B00D37276 /* UIKit.framework */; };
@@ -21,9 +20,10 @@
 		422ABB731B106E1C00D37276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422ABB551B106E1B00D37276 /* UIKit.framework */; };
 		422ABB7B1B106E1D00D37276 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 422ABB791B106E1D00D37276 /* InfoPlist.strings */; };
 		422ABB7D1B106E1D00D37276 /* NewCandySearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ABB7C1B106E1D00D37276 /* NewCandySearchTests.m */; };
-		422ABB881B10755C00D37276 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ABB871B10755C00D37276 /* Course.m */; };
-		422ABB8B1B1077AA00D37276 /* SelfCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ABB8A1B1077AA00D37276 /* SelfCell.m */; };
-		42517E581B15EE8900A87B06 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42517E561B15EE8900A87B06 /* DetailViewController.m */; };
+		BFDD84571B2134B70029A775 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDD84561B2134B70029A775 /* Course.m */; };
+		BFDD84591B2134CD0029A775 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDD84581B2134CD0029A775 /* DetailViewController.m */; };
+		BFDD845C1B2134E40029A775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDD845B1B2134E40029A775 /* Images.xcassets */; };
+		BFDD845E1B21351E0029A775 /* SelfCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDD845D1B21351E0029A775 /* SelfCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4207FE1E1B1364CD003FA726 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../SimbleTable/SimbleTable/Images.xcassets; sourceTree = "<group>"; };
 		422ABB4E1B106E1A00D37276 /* NewCandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewCandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		422ABB511B106E1A00D37276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		422ABB531B106E1B00D37276 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,12 +55,13 @@
 		422ABB781B106E1D00D37276 /* NewCandySearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewCandySearchTests-Info.plist"; sourceTree = "<group>"; };
 		422ABB7A1B106E1D00D37276 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		422ABB7C1B106E1D00D37276 /* NewCandySearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCandySearchTests.m; sourceTree = "<group>"; };
-		422ABB861B10755C00D37276 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Course.h; path = ../../CandySearch/Course.h; sourceTree = "<group>"; };
-		422ABB871B10755C00D37276 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Course.m; path = ../../CandySearch/Course.m; sourceTree = "<group>"; };
-		422ABB891B1077AA00D37276 /* SelfCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelfCell.h; path = ../SimbleTable/SelfCell.h; sourceTree = "<group>"; };
-		422ABB8A1B1077AA00D37276 /* SelfCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelfCell.m; path = ../SimbleTable/SelfCell.m; sourceTree = "<group>"; };
-		42517E561B15EE8900A87B06 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../../SimbleTable/SimbleTable/DetailViewController.m; sourceTree = "<group>"; };
-		42517E571B15EE8900A87B06 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../../SimbleTable/SimbleTable/DetailViewController.h; sourceTree = "<group>"; };
+		BFDD84551B2134B00029A775 /* Course.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		BFDD84561B2134B70029A775 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		BFDD84581B2134CD0029A775 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BFDD845A1B2134D00029A775 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BFDD845B1B2134E40029A775 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFDD845D1B21351E0029A775 /* SelfCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfCell.m; sourceTree = "<group>"; };
+		BFDD845F1B2135390029A775 /* SelfCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,8 @@
 		422ABB451B106E1900D37276 = {
 			isa = PBXGroup;
 			children = (
-				422ABB891B1077AA00D37276 /* SelfCell.h */,
-				422ABB8A1B1077AA00D37276 /* SelfCell.m */,
+				BFDD845F1B2135390029A775 /* SelfCell.h */,
+				BFDD845D1B21351E0029A775 /* SelfCell.m */,
 				422ABB571B106E1B00D37276 /* NewCandySearch */,
 				422ABB761B106E1C00D37276 /* NewCandySearchTests */,
 				422ABB501B106E1A00D37276 /* Frameworks */,
@@ -123,11 +123,11 @@
 		422ABB571B106E1B00D37276 /* NewCandySearch */ = {
 			isa = PBXGroup;
 			children = (
-				42517E561B15EE8900A87B06 /* DetailViewController.m */,
-				42517E571B15EE8900A87B06 /* DetailViewController.h */,
-				4207FE1E1B1364CD003FA726 /* Images.xcassets */,
-				422ABB861B10755C00D37276 /* Course.h */,
-				422ABB871B10755C00D37276 /* Course.m */,
+				BFDD845A1B2134D00029A775 /* DetailViewController.h */,
+				BFDD84581B2134CD0029A775 /* DetailViewController.m */,
+				BFDD84551B2134B00029A775 /* Course.h */,
+				BFDD84561B2134B70029A775 /* Course.m */,
+				BFDD845B1B2134E40029A775 /* Images.xcassets */,
 				422ABB601B106E1C00D37276 /* AppDelegate.h */,
 				422ABB611B106E1C00D37276 /* AppDelegate.m */,
 				422ABB631B106E1C00D37276 /* Main.storyboard */,
@@ -243,7 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4207FE1F1B1364CD003FA726 /* Images.xcassets in Resources */,
+				BFDD845C1B2134E40029A775 /* Images.xcassets in Resources */,
 				422ABB5C1B106E1C00D37276 /* InfoPlist.strings in Resources */,
 				422ABB651B106E1C00D37276 /* Main.storyboard in Resources */,
 			);
@@ -264,12 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFDD84571B2134B70029A775 /* Course.m in Sources */,
 				422ABB681B106E1C00D37276 /* ViewController.m in Sources */,
-				422ABB881B10755C00D37276 /* Course.m in Sources */,
-				422ABB8B1B1077AA00D37276 /* SelfCell.m in Sources */,
+				BFDD845E1B21351E0029A775 /* SelfCell.m in Sources */,
+				BFDD84591B2134CD0029A775 /* DetailViewController.m in Sources */,
 				422ABB621B106E1C00D37276 /* AppDelegate.m in Sources */,
 				422ABB5E1B106E1C00D37276 /* main.m in Sources */,
-				42517E581B15EE8900A87B06 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
