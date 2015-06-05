@@ -77,6 +77,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="courseAttributes" destination="QT1-H5-Ce7" id="kZH-p3-dRI"/>
                                             <outlet property="courseName" destination="EJv-S9-m8J" id="cgG-HL-G6w"/>
                                             <outlet property="pngImageView" destination="Jze-Fe-sqL" id="pn2-mw-tmI"/>
                                             <outlet property="teacherName" destination="eQf-gq-GfS" id="QNG-Mi-adK"/>
