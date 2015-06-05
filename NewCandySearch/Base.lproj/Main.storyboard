@@ -37,14 +37,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-S9-m8J">
-                                                    <rect key="frame" x="100" y="5" width="40" height="32"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-S9-m8J">
+                                                    <rect key="frame" x="100" y="5" width="38" height="35"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQf-gq-GfS">
-                                                    <rect key="frame" x="100" y="44" width="38" height="18"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQf-gq-GfS">
+                                                    <rect key="frame" x="100" y="47" width="31" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -99,7 +99,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="课程列表" id="XpH-Su-J8t">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="pwq-GH-i2k">
+                        <barButtonItem key="leftBarButtonItem" image="导航按钮" id="gCV-f3-Hxa" userLabel="导航按钮"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="pwq-GH-i2k" userLabel="搜索按钮">
                             <color key="tintColor" red="0.70588235294117652" green="0.14117647058823529" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="goToSearch:" destination="vXZ-lx-hvc" id="4dg-RN-Unu"/>
@@ -245,6 +246,7 @@
     <resources>
         <image name="02" width="200" height="200"/>
         <image name="search_L 2@1x" width="19" height="19"/>
+        <image name="导航按钮" width="22" height="16"/>
         <image name="菜单@1x" width="22" height="16"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
