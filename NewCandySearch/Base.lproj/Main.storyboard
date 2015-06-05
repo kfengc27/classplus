@@ -15,11 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="38X-uV-Bsr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" placeholder="搜索课程或教师" id="YOh-61-KNH">
                                     <rect key="frame" x="0.0" y="64" width="320" height="44"/>
@@ -100,7 +100,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="课程列表" id="XpH-Su-J8t">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="pwq-GH-i2k">
-                            <color key="tintColor" red="0.61176470589999998" green="0.12549019610000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.70588235294117652" green="0.14117647058823529" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="goToSearch:" destination="vXZ-lx-hvc" id="4dg-RN-Unu"/>
                             </connections>
@@ -129,17 +129,17 @@
         <!--Navigation Controller-->
         <scene sceneID="ucN-v2-azS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NNA-Uo-ctb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="NNA-Uo-ctb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LYN-Jd-7G5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.61176470589999998" green="0.12549019610000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.64313725490196083" green="0.20000000000000001" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.64313725490196083" green="0.20000000000000001" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.61176470589999998" green="0.12549019610000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="textShadowColor" red="0.61176470589999998" green="0.12549019610000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.64313725490196083" green="0.20000000000000001" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="397" y="1"/>
         </scene>
-        <!--具体信息-->
+        <!--课程介绍-->
         <scene sceneID="Z4Z-jg-afQ">
             <objects>
                 <viewController id="Q7L-YB-eQF" customClass="DetailViewController" sceneMemberID="viewController">
@@ -185,7 +185,7 @@
                                 <items>
                                     <tabBarItem systemItem="favorites" id="cnt-zi-L0B"/>
                                     <tabBarItem title="评论" image="菜单@1x" id="mA0-Ds-ehq"/>
-                                    <tabBarItem title="xxx赞" image="search_L 2@1x" id="5gm-2P-Erg"/>
+                                    <tabBarItem title="赞" image="search_L 2@1x" id="5gm-2P-Erg"/>
                                 </items>
                             </tabBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-1E-SyQ">
@@ -199,7 +199,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="具体信息" id="ESW-K2-hgd"/>
+                    <navigationItem key="navigationItem" title="课程介绍" id="ESW-K2-hgd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cImage" destination="Ltd-SN-GSQ" id="YnL-yk-cPz"/>
