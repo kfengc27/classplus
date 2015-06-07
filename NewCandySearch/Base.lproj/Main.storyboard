@@ -139,7 +139,7 @@
                         <color key="tintColor" red="0.64313725490196083" green="0.20000000000000001" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
                             <color key="textColor" red="0.64313725490196083" green="0.20000000000000001" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -234,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crP-8W-C5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="-109"/>
+            <point key="canvasLocation" x="1692" y="1"/>
         </scene>
     </scenes>
     <resources>
